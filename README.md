@@ -1,10 +1,12 @@
 # Salesforce-Utils
+
 <table>
   <tr>
-    <th width="40%" ><p>Repository with tools, tricks, commands and resources for Salesforce development and administration.</p></th>
+    <td width="40%" ><img src="./img/Salesforce-Logo.png" width="200"/><p><b>Repository with tools, tricks, commands and resources for Salesforce development and administration.</p></td>
     <td>
-      
-### _Table of content_
+
+## _Table of content_
+
 - ⚙ [**LWC**](#lwc)
 - 💻 [**Command Issues**](#command-issues)
   - [Useful commands](#useful-commands)
@@ -13,23 +15,28 @@
   - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
   - [Subquery examples](#subquery-examples)
 - [**Apex**](#apex)
-  -  [Alcanzar límite de queries](#alcanzar-límite-de-queries)
+  - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
 - [**Naming Convention**](#naming-convention)
 - [**VS Code Tricks**](#vs-code)
   - [Tricks](#tricks)
   - [UNABLE TO GET ISSUER CERT LOCALLY](#unable-to-get-issuer-cert-locally)
-  - [My settings.json](#my-settingsjson)       
+  - [My settings.json](#my-settingsjson)
     </td>
   </tr>
+
 </table>
 
 ## LWC
+
 - [Advanced Salesforce LWC debugging with Chrome Developer Tools](https://beyondthecloud.dev/blog/chrome-dev-tools-for-salesforce-lwc-developers)
-> [!TIP]
+
+> ![TIP]
 > Evita Visualforce Page 😊
 
 ## Command Issues
+
 ### Useful commands
+
 ```shell
 # Traer datos de la fuente
 sfdx force:source:retrieve -m CustomObject:CustomObject__c
@@ -65,6 +72,7 @@ sfdx force:data:tree:import
 ```
 
 ### No reconoce ORGs
+
 ```shell
 # Si no reconoce el valor de la ORG
 sfdx force:org:list
@@ -77,7 +85,9 @@ sfdx alias:unset XXXX
 ```
 
 ## SOQL
+
 ### Chain LIKE and NOT LIKE
+
 ```sql
 # Forma de encadenar varios LIKE y NOT LIKE
 SELECT Name
@@ -92,6 +102,7 @@ WHERE (NOT Name LIKE 'ST%')
 ```
 
 ### Subquery examples
+
 ```sql
 SELECT Name 
 FROM Account 
@@ -102,14 +113,17 @@ WHERE Id NOT IN
     WHERE IsClosed = true
   )
 ```
+
 ## Apex
+
 ### Alcanzar límite de queries
 
-Si se va a alcanzar el límite del queries por DML en bucle:
+Si se va a alcanzar el límite de queries por DML en bucle:
 
   1. Poner método -> último en el Trigger Handler
   2. Controlar con siguiente if y romper proceso.
   3. Invocar framework de control de errores si lo hay
+
 ```java
 
 if (Limits.getQueries() < Limits.getLimitQueries() {
@@ -123,133 +137,53 @@ else {
 
 ## Naming convention
 
-<table border=1>
-    <tr>
-        <th colspan=2>OBJECT FIELDS</th>
-    </tr>
-    <tr>
-        <th>Auto Number</th>
-        <td><b>AUT_</b>AutoNumberField__c</td>
-    </tr>
-    <tr>
-        <th>Boolean</th>
-        <td><b>FLG_</b>BooleanField__c</td>
-    </tr>
-    <tr>
-        <th>Currency</th>
-        <td><b>DIV_</b>CurrencyField__c</td>
-    </tr>
-    <tr>
-        <th>Date & DateTime</th>
-        <td><b>DAT_</b>DateTimeField__c</td>
-    </tr>
-    <tr>
-        <th>Email</th>
-        <td><b>EMA_</b>EmailField__c</td>
-    </tr>
-    <tr>
-        <th>Formula</th>
-        <td><b>FOR_</b>FormulaField__c</td>
-    </tr>
-    <tr>
-        <th>Geolocation</th>
-        <td><b>GEO_</b>GeolocationField__c</td>
-    </tr>
-    <tr>
-        <th>Lookup</th>
-        <td><b>LKP_</b>LookUpField__c</td>
-    <tr>
-        <th>Multi-Select Picklist</th>
-        <td><b>MSE_</b>MultiSelectField__c</td>
-    </tr>
-    <tr>
-        <th>Number</th>
-        <td><b>NUM_</b>NumberField__c</td>
-    </tr>
-    <tr>
-        <th>Percent</th>
-        <td><b>PER_</b>PercentField__c</td>
-    </tr>
-    <tr>
-        <th>Phone</th>
-        <td><b>TEL_</b>PhoneField__c</td>
-    </tr>
-    <tr>
-        <th>Picklist</th>
-        <td><b>SEL_</b>PicklistField__c</td>
-    </tr>
-    <tr>
-        <th>Roll-Up Summary</th>
-        <td><b>RUS_</b>RollUpSummaryField__c</td>
-    </tr>
-    <tr>
-        <th>Text</th>
-        <td><b>TXT_</b>TextField__c</td>
-    </tr>
-    <tr>
-        <th>Time</th>
-        <td><b>HOR_</b>TimeField__c</td>
-    </tr>
-    <tr>
-        <th>URL</th>
-        <td><b>URL_</b>URLField__c</td>
-    </tr>
-    <tr><td colspan=2></td></tr>
-        <th colspan=2>METADATA</th>
-    </tr>
-    <tr>
-        <th>Flow</th>
-        <td><b>FLW_</b>FlowName</td>
-    </tr>
-    <tr>
-        <th>Lightning Page</th>
-        <td><b>LP_</b>PageName</td>
-    </tr>
-    <tr>
-        <th>Path</th>
-        <td><b>PTH_</b>PathName</td>
-    </tr>
-    <tr>
-        <th>Tab</th>
-        <td><b>TAB_</b>TabName</td>
-    </tr>
-    <tr>
-        <th>Validation Rule</th>
-        <td><b>VR_</b>PathName</td>
-    </tr>
-    <tr><td colspan=2></td></tr>
-    <tr>
-        <th colspan=2>TRIGGER AND CLASSES</th>
-    </tr>
-    <tr>
-        <th>Trigger</th>
-        <td><b>TRG_</b>TriggerName</td>
-    </tr>
-    <tr>
-        <th>Trigger Handler</th>
-        <td><b>TRG_</b>ClassName<b>Handler</b></td>
-    </tr>
-    <tr>
-        <th>Helper</th>
-        <td><b>TRG_</b>ClassName<b>Helper</b></td>
-    </tr>
-    <tr>
-        <th>Batch</th>
-        <td><b>BATCH_</b>ClassName</td>
-    </tr>
-    <tr>
-        <th>Scheduler</th>
-        <td><b>SCH_</b>ClassName</td>
-    </tr>
-    <tr>
-        <th>Test</th>
-        <td>ClassName<b>_Test</b></td>
-    </tr>
-</table>
+### _Object Fields_
 
-## VS Code 
+| **Field Type**            | **API Name**                 |
+|---------------------------|------------------------------|
+| Auto Number               | **AUT**_AutoNumberField__c   |
+| Boolean                   | **FLG**_BooleanField__c      |
+| Currency                  | **DIV**_CurrencyField__c     |
+| Date & DateTime           | **DAT**_DateTimeField__c     |
+| Email                     | **EMA**_EmailField__c        |
+| Formula                   | **FOR**_FormulaField__c      |
+| Geolocation               | **GEO**_GeolocationField__c  |
+| Lookup                    | **LKP**_LookUpField__c       |
+| Multi-Select Picklist     | **MSE**_MultiSelectField__c  |
+| Number                    | **NUM**_NumberField__c       |
+| Percent                   | **PER**_PercentField__c      |
+| Phone                     | **TEL**_PhoneField__c        |
+| Picklist                  | **SEL**_PicklistField__c     |
+| Roll-Up Summary           | **RUS**_RollUpSummaryField__c|
+| Text                      | **TXT**_TextField__c         |
+| Time                      | **HOR**_TimeField__c         |
+| URL                       | **URL**_URLField__c          |
+
+### _Metadata_
+
+| **Metadata Type**         | **API Name**                 |
+|---------------------------|------------------------------|
+| Flow                      | **FLW**_FlowName             |
+| Lightning Page            | **LP**_PageName              |
+| Path                      | **PTH**_PathName             |
+| Tab                       | **TAB**_TabName              |
+| Validation Rule           | **VR**_PathName              |
+
+### _Trigger and Classes_
+
+| **Metadata Type**         | **API Name**                 |
+|---------------------------|------------------------------|
+| Trigger                   | **TRG**_TriggerName          |
+| Trigger Handler           | **TRG**_ClassName**Handler** |
+| Helper                    | **TRG**_ClassName**Helper**  |
+| Batch                     | **BATCH**_ClassName          |
+| Scheduler                 | **SCH**_ClassName            |
+| Test                      | ClassName_**Test**           |
+
+## VS Code
 
 ### Tricks
+
 > [!TIP]
 > Es recomendable tener la siguiente línea en tu `settings.json` para detectar conflictos antes de desplegar en la ORG.
 >
@@ -258,12 +192,14 @@ else {
 > ```
 
 ### UNABLE TO GET ISSUER CERT LOCALLY
+
 > [!CAUTION]
-> Al hacer `sfdx force:org:list` aparece ese error. 
+> Al hacer `sfdx force:org:list` aparece ese error.
 >
 > **Solución**: agregar variable de entorno `NODE_TLS_REJECT_UNAUTHORIZED = 0`
 
 ### My settings.json
+
 ```json
 {
     "salesforcedx-vscode-apex.java.home": "",
