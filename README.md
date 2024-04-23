@@ -163,11 +163,13 @@ else {
 
 | **Metadata Type**         | **API Name**                 |
 |---------------------------|------------------------------|
+| Event                     | **LEV**_EventName            |
 | Flow                      | **FLW**_FlowName             |
 | Lightning Page            | **LP**_PageName              |
 | Path                      | **PTH**_PathName             |
 | Tab                       | **TAB**_TabName              |
 | Validation Rule           | **VR**_PathName              |
+| Workflow                  | **WF**_ObjectNameProcess     |
 
 ### _Trigger and Classes_
 
@@ -178,7 +180,15 @@ else {
 | Helper                    | **TRG**_ClassName**Helper**  |
 | Batch                     | **BATCH**_ClassName          |
 | Scheduler                 | **SCH**_ClassName            |
-| Test                      | ClassName_**Test**           |
+| Test                      | ClassAPIName_**Test**        |
+
+### _Visualforce_
+
+| **Metadata Type**           | **API Name**                     |
+|-----------------------------|----------------------------------|
+| Visualforce Page            | **VFP**_PageName                 |
+| Visualforce Controller      | **VFC**_ControllerName           |
+| Visualforce Controller Test | ControllerAPIName_**Test**       |
 
 ## VS Code
 
