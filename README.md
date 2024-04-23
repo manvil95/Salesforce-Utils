@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <td width="40%" ><img src="./img/Salesforce-Logo.png" width="200"/><p><b>Repository with tools, tricks, commands and resources for Salesforce development and administration.</p></td>
+    <td width="40%" align=center><img src="./img/Salesforce-Logo.png" width="200"/><br><br></b><p><b>Repository with tools, tricks, commands and resources for Salesforce development and administration.</p></td>
     <td>
 
 ## _Table of content_
