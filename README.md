@@ -30,8 +30,8 @@
 
 - [Advanced Salesforce LWC debugging with Chrome Developer Tools](https://beyondthecloud.dev/blog/chrome-dev-tools-for-salesforce-lwc-developers)
 
-> ![TIP]
-> Evita Visualforce Page 😊
+> [!TIP]
+> Evita Visualforce Page. 😊
 
 ## Command Issues
 
