@@ -181,6 +181,7 @@ When the 'Developer Console' does not show any log and freezes, this is what to 
 
 | **Metadata Type**         | **API Name**                 |
 |---------------------------|------------------------------|
+| Custom Label              | **LAB**_LabelName            |
 | Event                     | **LEV**_EventName            |
 | Flow                      | **FLW**_FlowName             |
 | Lightning Page            | **LP**_PageName              |
