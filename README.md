@@ -15,6 +15,7 @@
   - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
   - [Subquery examples](#subquery-examples)
 - [**Apex**](#apex)
+  - [Code review checklist](#code-review-checklist)
   - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
 - [**Naming Convention**](#naming-convention)
 - [**VS Code Tricks**](#vs-code)
@@ -115,6 +116,13 @@ WHERE Id NOT IN
 ```
 
 ## Apex
+
+### Code review checklist
+
+<img src="./img/Code-Review.png" width="100%" alt="Expert code review"/>
+
+- [Code review checklist](https://www.apexhours.com/code-review-checklist/)
+- [Clean code in Salesforce](https://www.apexhours.com/clean-code-in-salesforce/)
 
 ### Alcanzar límite de queries
 
