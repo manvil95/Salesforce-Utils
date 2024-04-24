@@ -17,11 +17,13 @@
 - [**Apex**](#apex)
   - [Code review checklist](#code-review-checklist)
   - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
+  - [Developer console doesn't show logs](#developer-console-doesnt-show-logs)
 - [**Naming Convention**](#naming-convention)
 - [**VS Code Tricks**](#vs-code)
   - [Tricks](#tricks)
   - [UNABLE TO GET ISSUER CERT LOCALLY](#unable-to-get-issuer-cert-locally)
   - [My settings.json](#my-settingsjson)
+- [References](#references)
     </td>
   </tr>
 
@@ -142,6 +144,14 @@ else {
   break;
 }
 ```
+
+### Developer console doesn't show logs
+
+When the 'Developer Console' does not show any log and freezes, this is what to do[^1]: if you have any Chromium based browser such as Chrome, edge, opera, etc. you have to open the dev tools from the console, open the network section and refresh and magically it is solved:
+ 
+1. Login and open Developer Console by Chrome
+2. Open Developer tools and select Network
+3. Reload on Developer Console
 
 ## Naming convention
 
@@ -333,6 +343,9 @@ else {
     ]
 }
 ```
+---
+##### References
+[^1]: [Developer Console menus are unresponsive](https://help.salesforce.com/s/articleView?id=000386416&type=1)
 
 <!-- 
 > [!NOTE]  
