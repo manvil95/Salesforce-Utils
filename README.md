@@ -18,6 +18,7 @@
   - [Code review checklist](#code-review-checklist)
   - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
   - [Developer console doesn't show logs](#developer-console-doesnt-show-logs)
+  - [Trigger Frameworks](#trigger-frameworks)
 - [**Naming Convention**](#naming-convention)
 - [**VS Code Tricks**](#vs-code)
   - [Tricks](#tricks)
@@ -152,6 +153,12 @@ When the 'Developer Console' does not show any log and freezes, this is what to 
 1. Login and open Developer Console by Chrome
 2. Open Developer tools and select Network
 3. Reload on Developer Console
+
+### Trigger Frameworks
+- O'Hara
+- Dan Appleman[^2] 
+- Hari Krishnan[^3]
+- Scot Wells[^4]
 
 ## Naming convention
 
@@ -347,7 +354,9 @@ When the 'Developer Console' does not show any log and freezes, this is what to 
 ---
 ##### References
 [^1]: [Developer Console menus are unresponsive](https://help.salesforce.com/s/articleView?id=000386416&type=1)
-
+[^2]: [Dan Appleman - Triggers without frameworks](https://github.com/danappleman/Triggers-without-frameworks)
+[^3]: [Hari Krishnan](https://krishhari.wordpress.com/2013/07/22/an-architecture-framework-to-handle-triggers-in-the-force-com-platform/)
+[^4]: [Scott Wells](https://github.com/salesforcedoc/tscottdev-trigger-framework/tree/master)
 <!-- 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
