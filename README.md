@@ -41,20 +41,26 @@
 
 ### Useful commands
 
+#### Traer datos de la fuente
+
 ```shell
-# Traer datos de la fuente
 sfdx force:source:retrieve -m CustomObject:CustomObject__c
 sfdx force:source:retrieve -m ApexClass:MyApexClass
 sfdx force:source:retrieve -m Profile:Admin
+```
 
+```shell
 # Si poneis en la terminal de vscode este comando 
 sfdx force:apex:log:tail --color > log.txt
 # Dejar ejecutando mientras se prueba
 # Guarda archivo en carpeta raíz
 # mete en el archivo log.txt todos los logs que vayan saliendo
+```
 
-# Listar ORG
+#### Listar ORG
+```shell
 sfdx force:org:list
+sf org list
 
 # Mostrar alias y Value de las ORG
 sfdx alias:list
