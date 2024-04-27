@@ -58,26 +58,46 @@ sfdx force:apex:log:tail --color > log.txt
 ```
 
 #### Listar ORG
+
 ```shell
 sfdx force:org:list
 sf org list
+```
 
-# Mostrar alias y Value de las ORG
+#### Mostrar alias y Value de las ORG
+
+```shell
 sfdx alias:list
+```
 
-# Borrar una org
+#### Borrar una org
+
+```shell
 sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'
+```
 
-# Mostrar ORG Description
+#### Mostrar ORG Description
+
+```shell
 sfdx force:org:display 
+```
 
-# Unset Alias ORG
+#### Unset Alias ORG
+
+```shell
 sfdx alias:unset YourAlias
+```
 
-# Retrieve a través de package.xml
+
+#### Retrieve a través de package.xml
+
+```shell
 sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml
+```
 
- # SalesforceTreeAPI
+#### SalesforceTreeAPI
+
+```shell
 sfdx force:data:tree:import
 ```
 
