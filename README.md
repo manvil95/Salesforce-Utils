@@ -10,6 +10,7 @@
 - ⚙ [**LWC**](#lwc)
 - 💻 [**Command Issues**](#command-issues)
   - [Useful commands](#useful-commands)
+    - [Retrieve metadata](#retrieve-metadata)
   - [No reconoce orgs](#no-reconoce-orgs)
 - 📚 [**SOQL**](#soql)
   - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
@@ -41,7 +42,7 @@
 
 ### Useful commands
 
-#### Traer datos de la fuente
+#### Retrieve metadata
 
 ```shell
 sfdx force:source:retrieve -m CustomObject:CustomObject__c
