@@ -36,6 +36,7 @@
 ## LWC
 
 - [Advanced Salesforce LWC debugging with Chrome Developer Tools](https://beyondthecloud.dev/blog/chrome-dev-tools-for-salesforce-lwc-developers)
+- [Order of execution of wire in LWC](https://salesforce.stackexchange.com/questions/377190/order-of-execution-of-wire-in-lwc)
 
 > [!TIP]
 > Evita Visualforce Page. 😊
