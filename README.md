@@ -11,6 +11,8 @@
 - 💻 [**Command Issues**](#command-issues)
   - [Useful commands](#useful-commands)
     - [Retrieve metadata](#retrieve-metadata)
+    - [Listar ORG](#listar-org)
+    - [Mostrar alias y Value de las ORG](#mostrar-alias-y-value-de-las-org)
   - [No reconoce orgs](#no-reconoce-orgs)
 - 📚 [**SOQL**](#soql)
   - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
