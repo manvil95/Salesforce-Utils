@@ -11,6 +11,7 @@
 - 💻 [**Command Issues**](#command-issues)
   - [Useful commands](#useful-commands)
     - [Retrieve metadata](#retrieve-metadata)
+    - [Save logs beyond debugs logs](#save-logs-beyond-debugs-logs)
     - [Listar ORG](#listar-org)
     - [Mostrar alias y Value de las ORG](#mostrar-alias-y-value-de-las-org)
   - [No reconoce orgs](#no-reconoce-orgs)
@@ -53,12 +54,14 @@ sfdx force:source:retrieve -m ApexClass:MyApexClass
 sfdx force:source:retrieve -m Profile:Admin
 ```
 
+#### Save logs beyond debugs logs
+
+Poner en la terminal de VS Code este comando.
+Dejar ejecutando mientras se realizan las acciones deseadas.
+Guarda archivo en carpeta raíz y mete en el archivo `log.txt` todos los logs que vayan produciéndose.
+
 ```shell
-# Si poneis en la terminal de vscode este comando 
 sfdx force:apex:log:tail --color > log.txt
-# Dejar ejecutando mientras se prueba
-# Guarda archivo en carpeta raíz
-# mete en el archivo log.txt todos los logs que vayan saliendo
 ```
 
 #### Listar ORG
