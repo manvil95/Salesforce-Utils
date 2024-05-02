@@ -15,14 +15,14 @@
     - [Listar ORG](#listar-org)
     - [Mostrar alias y Value de las ORG](#mostrar-alias-y-value-de-las-org)
   - [No reconoce orgs](#no-reconoce-orgs)
-- 📚 [**SOQL**](#soql)
-  - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
-  - [Subquery examples](#subquery-examples)
 - [**Apex**](#apex)
   - [Code review checklist](#code-review-checklist)
   - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
   - [Developer console doesn't show logs](#developer-console-doesnt-show-logs)
   - [Trigger Frameworks](#trigger-frameworks)
+- 📚 [**SOQL**](#soql)
+  - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
+  - [Subquery examples](#subquery-examples)
 - [**Naming Convention**](#naming-convention)
 - [**VS Code Tricks**](#vs-code)
   - [Tricks](#tricks)
@@ -121,36 +121,6 @@ sfdx alias:unset XXXX
 # Volver a conectar
 ```
 
-## SOQL
-
-### Chain LIKE and NOT LIKE
-
-```sql
-# Forma de encadenar varios LIKE y NOT LIKE
-SELECT Name
-FROM Object
-WHERE (NOT Name LIKE 'ST%')
-  AND (NOT Name LIKE 'PA%')
-
-# Bind 
-SELECT Name FROM Object
-WHERE (NOT Name LIKE 'ST%')
-  AND (Name NOT IN :var)
-```
-
-### Subquery examples
-
-```sql
-SELECT Name 
-FROM Account 
-WHERE Id NOT IN 
-  (
-    SELECT AccountId 
-    FROM Opportunity 
-    WHERE IsClosed = true
-  )
-```
-
 ## Apex
 
 ### Code review checklist
@@ -193,6 +163,36 @@ When the 'Developer Console' does not show any log and freezes, this is what to 
 - Scot Wells[^4]
 - O'Hara[^5]
 - Mitch Spano[^6]
+
+## SOQL
+
+### Chain LIKE and NOT LIKE
+
+```sql
+# Forma de encadenar varios LIKE y NOT LIKE
+SELECT Name
+FROM Object
+WHERE (NOT Name LIKE 'ST%')
+  AND (NOT Name LIKE 'PA%')
+
+# Bind 
+SELECT Name FROM Object
+WHERE (NOT Name LIKE 'ST%')
+  AND (Name NOT IN :var)
+```
+
+### Subquery examples
+
+```sql
+SELECT Name 
+FROM Account 
+WHERE Id NOT IN 
+  (
+    SELECT AccountId 
+    FROM Opportunity 
+    WHERE IsClosed = true
+  )
+```
 
 ## Naming convention
 
