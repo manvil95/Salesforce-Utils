@@ -24,6 +24,7 @@
   - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
   - [Subquery examples](#subquery-examples)
 - [**Naming Convention**](#naming-convention)
+  - [List of common API suffixes in Salesforce](#list-of-common-API-suffixes-in-salesforce)   
 - [**VS Code Tricks**](#vs-code)
   - [Tricks](#tricks)
   - [UNABLE TO GET ISSUER CERT LOCALLY](#unable-to-get-issuer-cert-locally)
@@ -250,6 +251,37 @@ WHERE Id NOT IN
 | Visualforce Controller      | **VFC**_ControllerName           |
 | Visualforce Controller Test | ControllerAPIName_**Test**       |
 
+### List of common API suffixes in Salesforce
+
+| **API Suffixes**[^7]     | **Used for**                                        |  
+|--------------------------|-----------------------------------------------------|
+| **__c**                  | Object / Field                                      |          
+| **__r**                  | Relationship                                        |      
+| **__e**                  | Events                                              |  
+| **__b**                  | Big Objects                                         |      
+| **__mdt**	               | Custom Metadata Type                                |              
+| **__x**	                 | External Object                                     |          
+| **__share**	             | Sharing Object                                      |          
+| **__Tag**	               | Salesforce Tags                                     |          
+| **__voteStat**	         | Rating for an article                               |              
+| **__viewStat**	         | Number of view per article                          |                      
+| **__kav**	               | Knowledge Article Objects                           |                  
+| **__history**	           | Field History Tracking                              |                  
+| **__xo**	               | Salesforce-to-Salesforce (S2S) spoke                |                              
+| **__pc**	               | Custom Persona Account Field                        |                      
+| **__ChangeEvent**	       | Change Data Capture                                 |              
+| **__StateCode__s**	     | Custom Address field                                |              
+| **__CountryCode__s**	   | Custom Address field                                |              
+| **__Street__s**	         | Custom Address field                                |              
+| **__PostalCode__s**	     | Custom Address field                                |              
+| **__City__s**	           | Custom Address field                                |              
+| **__GeocodeAccuracy__s** | Custom Address field                                |              
+| **__dlm**	               | (Data Model Object) for the Customer Data Platform. |                                              
+| **__chn**	               | Change Event channel                                |              
+| **__latitude__s**	       | Latitude Coordinate                                 |              
+| **__longitude__s**	     | Longitude Coordinate                                | 
+
+
 ## VS Code
 
 ### Tricks
@@ -394,6 +426,7 @@ WHERE Id NOT IN
 [^4]: [Scott Wells](https://github.com/salesforcedoc/tscottdev-trigger-framework/tree/master)
 [^5]: [O'hara](https://github.com/kevinohara80/sfdc-trigger-framework)
 [^6]: [Mitch Spano](https://github.com/mitchspano/apex-trigger-actions-framework)
+[^7]: [Suffixes in Salesforce](https://www.apexhours.com/suffixes-in-salesforce/)
 
 <!-- 
 > [!NOTE]  
