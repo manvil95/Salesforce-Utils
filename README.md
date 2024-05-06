@@ -241,6 +241,7 @@ WHERE Id NOT IN
 | Helper                    | **TRG**_ClassName**Helper**  |
 | Batch                     | **BATCH**_ClassName          |
 | Scheduler                 | **SCH**_ClassName            |
+| Interface                 | **INT**_InterfaceName        |
 | Test                      | ClassAPIName_**Test**        |
 
 ### _Visualforce_
