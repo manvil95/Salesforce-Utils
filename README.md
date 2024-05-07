@@ -145,7 +145,7 @@ IF(
         '  -  ',
         ' - '
     ),
-    Text(rc_Case_Classification__r.rc_Sublan_o__c)
+    Text(RelatedObject__r.PicklistField__c)
 )
 ```
 
