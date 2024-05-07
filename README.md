@@ -15,6 +15,9 @@
     - [Listar ORG](#listar-org)
     - [Mostrar alias y Value de las ORG](#mostrar-alias-y-value-de-las-org)
   - [No reconoce orgs](#no-reconoce-orgs)
+- [**Organization - Production - Sandbox**](#organization---production---sandbox)
+  - [Standard - Custom Objects](#standard---custom-objects)
+    - [Formula Fields](#formula-fields)   
 - [**Apex**](#apex)
   - [Code review checklist](#code-review-checklist)
   - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
@@ -121,6 +124,29 @@ sfdx alias:list
 sfdx alias:unset XXXX
 
 # Volver a conectar
+```
+
+## Organization - Production - Sandbox
+
+### Standard - Custom Objects
+
+#### Formula Fields
+Cuando se desee mostrar correctamente el label en vez de el APIName de una picklist, utilizar funcionalidades de las fórmulas. Ej.: Tengo una picklist que muestra los valores como: A-Suceso, B-EspacioBlanco-B12. Si se desea poner espacios entre los guiones, la fórmula debería ser así:
+
+```soql
+IF(
+    CONTAINS(Text(RelatedObject__r.PicklistField__c), '-'),
+    SUBSTITUTE(
+        SUBSTITUTE(
+            Text(RelatedObject__r.PicklistField__c),
+            '-',
+            ' - '
+        ),
+        '  -  ',
+        ' - '
+    ),
+    Text(rc_Case_Classification__r.rc_Sublan_o__c)
+)
 ```
 
 ## Apex
