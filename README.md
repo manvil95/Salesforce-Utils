@@ -252,6 +252,7 @@ WHERE Id NOT IN
 |---------------------------|------------------------------|
 | Custom Label              | **LAB**_LabelName            |
 | Event                     | **LEV**_EventName            |
+| External Credentials      | **EC**_ExtCredentialsName    |
 | Flow                      | **FLW**_FlowName             |
 | Lightning Page            | **LP**_PageName              |
 | Path                      | **PTH**_PathName             |
