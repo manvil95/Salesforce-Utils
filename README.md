@@ -396,117 +396,110 @@ A `.xml` file to retrieve all metadata's type from Salesforce.
 
 ```json
 {
-    "salesforcedx-vscode-apex.java.home": "",
-    "editor.fontLigatures": "'ss01', 'cv03', 'zero'",
-    "workbench.iconTheme": "material-icon-theme", 
-    "git.confirmSync": false,
-    "editor.fontFamily": "JetBrains Mono, Victor Mono, Consolas, 'Courier New', monospace",
-    "files.autoSave": "afterDelay",
-    "editor.indentSize": "tabSize",
-    "salesforcedx-vscode-core.detectConflictsAtSync": true,
-    "workbench.tree.enableStickyScroll": true,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "editor.stickyScroll.enabled": true,
-    "editor.guides.bracketPairs": true,
-    "editor.cursorBlinking": "expand",
-    "editor.scrollbar.verticalScrollbarSize": 8,
-    "editor.overviewRulerBorder": false,
-    "editor.minimap.autohide": true,
-    "editor.minimap.maxColumn": 60,
-    "editor.glyphMargin": false,
-    "apexPMD.runOnFileOpen": true,
-    "symbols.hidesExplorerArrows": false,
     "[xml]": {
         "editor.defaultFormatter": "DotJoshJohnson.xml"
     },
-    "workbench.productIconTheme": "fluent-icons",
-    "xml.symbols.maxItemsComputed": -5000,
+    "apexPMD.runOnFileOpen": true,
+    "better-comments.tags": [
+        {
+            "backgroundColor": "transparent",
+            "bold": true,
+            "color": "#FF2D00",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "!",
+            "underline": true
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": true,
+            "color": "#C848CE",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "-->",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": true,
+            "color": "#3498DB",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "?",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": false,
+            "color": "#474747",
+            "italic": false,
+            "strikethrough": true,
+            "tag": "//",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": true,
+            "color": "#FF8C00",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "todo",
+            "underline": false
+        },
+        {
+            "backgroundColor": "transparent",
+            "bold": true,
+            "color": "#98C379",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "*",
+            "underline": false
+        }
+    ],
     "codesnap.showWindowControls": false,
     "codesnap.shutterAction": "copy",
     "codesnap.target": "window",
-    "settingsSync.ignoredExtensions": [
-        
-    ],
-    "window.zoomLevel": 1,
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.cursorSmoothCaretAnimation": "on",
+    "diffEditor.maxComputationTime": 0,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "terminal.integrated.stickyScroll.enabled": true,
-    "editor.stickyScroll.maxLineCount": 10,
-    "workbench.tree.stickyScrollMaxItemCount": 10,
-    "editor.stickyScroll.defaultModel": "indentationModel",
-    "better-comments.tags": [
-
-
-        {
-            "tag": "!",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": true,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
-            "tag": "-->",
-            "color": "#C848CE",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
-            "tag": "?",
-            "color": "#3498DB",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
-            "tag": "//",
-            "color": "#474747",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        }
-    ],
-    "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Night Owl",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "JetBrains Mono, Victor Mono, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": "'ss01', 'cv03', 'zero'",
+    "editor.glyphMargin": false,
+    "editor.guides.bracketPairs": true,
+    "editor.indentSize": "tabSize",
+    "editor.minimap.autohide": true,
+    "editor.minimap.maxColumn": 60,
     "editor.occurrencesHighlight": "multiFile",
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.verticalScrollbarSize": 8,
+    "editor.stickyScroll.defaultModel": "indentationModel",
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyScroll.maxLineCount": 10,
+    "files.autoSave": "afterDelay",
+    "git.confirmSync": false,
+    "prettier.tabWidth": 4,
+    "salesforcedx-vscode-apex.java.home": "",
+    "salesforcedx-vscode-core.detectConflictsAtSync": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredExtensions": [],
+    "symbols.hidesExplorerArrows": false,
+    "terminal.integrated.stickyScroll.enabled": true,
+    "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
         "editor.lineHighlightBorder": "#ffffff1f"
-
     },
-    "diffEditor.maxComputationTime": 0,
-    "prettier.tabWidth": 4,
-    "workbench.settings.applyToAllProfiles": [
-        
-    ]
+    "workbench.colorTheme": "Night Owl",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.settings.applyToAllProfiles": [],
+    "workbench.sideBar.location": "right",
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.tree.stickyScrollMaxItemCount": 10,
+    "xml.symbols.maxItemsComputed": -5000
 }
 ```
 ---
