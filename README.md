@@ -255,6 +255,7 @@ WHERE Id NOT IN
 | External Credentials      | **EC**_ExtCredentialsName    |
 | Flow                      | **FLW**_FlowName             |
 | Lightning Page            | **LP**_PageName              |
+| List View                 | **LV**_ListViewName          |
 | Path                      | **PTH**_PathName             |
 | Tab                       | **TAB**_TabName              |
 | Validation Rule           | **VR**_PathName              |
