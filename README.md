@@ -69,26 +69,26 @@ Guarda archivo en carpeta raíz y mete en el archivo `log.txt` todos los logs qu
 sfdx force:apex:log:tail --color > log.txt
 ```
 
-#### Listar ORG
+#### List ORGs
 
 ```shell
 sfdx force:org:list
 sf org list
 ```
 
-#### Mostrar alias y Value de las ORG
+#### Show ORG alias and value
 
 ```shell
 sfdx alias:list
 ```
 
-#### Borrar una org
+#### Deletr an org
 
 ```shell
 sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'
 ```
 
-#### Mostrar ORG Description
+#### Show ORG Description
 
 ```shell
 sfdx force:org:display 
@@ -101,7 +101,7 @@ sfdx alias:unset YourAlias
 ```
 
 
-#### Retrieve a través de package.xml
+#### Retrieve from package.xml
 
 ```shell
 sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml
