@@ -82,7 +82,7 @@ sf org list
 sfdx alias:list
 ```
 
-#### Deletr an org
+#### Delete an org
 
 ```shell
 sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'
@@ -158,7 +158,7 @@ IF(
 - [Code review checklist](https://www.apexhours.com/code-review-checklist/)
 - [Clean code in Salesforce](https://www.apexhours.com/clean-code-in-salesforce/)
 
-### Alcanzar límite de queries
+### Reach query limits
 
 Si se va a alcanzar el límite de queries por DML en bucle:
 
