@@ -379,7 +379,7 @@ A `.xml` file to retrieve all metadata's type from Salesforce.
 ### Tricks
 
 > [!TIP]
-> Es recomendable tener la siguiente línea en tu `settings.json` para detectar conflictos antes de desplegar en la ORG.
+> It is recommended to have the following line in your `settings.json` to detect conflicts before deploying to the ORG.
 >
 > ```json
 > "salesforcedx-vscode-core.detectConflictsAtSync": true,
@@ -390,7 +390,7 @@ A `.xml` file to retrieve all metadata's type from Salesforce.
 > [!CAUTION]
 > Al hacer `sfdx force:org:list` aparece ese error.
 >
-> **Solución**: agregar variable de entorno `NODE_TLS_REJECT_UNAUTHORIZED = 0`
+> **Solution**: add this environment variable `NODE_TLS_REJECT_UNAUTHORIZED = 0`
 
 ### My settings.json
 
