@@ -61,13 +61,18 @@ sfdx force:source:retrieve -m Profile:Admin
 
 #### Save logs beyond debugs logs
 
-Poner en la terminal de VS Code este comando.
-Dejar ejecutando mientras se realizan las acciones deseadas.
-Guarda archivo en carpeta raíz y mete en el archivo `log.txt` todos los logs que vayan produciéndose.
+Enter this command in the VS Code terminal.
+
+Leave it running while performing the desired actions.
+
+Save file in root folder and put in the `log.txt` file all the logs that are produced.
 
 ```shell
 sfdx force:apex:log:tail --color > log.txt
 ```
+
+Also, you can retrieve apex log in VS Code: `Ctrl + Shif + P` Log: Retrieve Apex Log And Show Analysis.
+
 
 #### List ORGs
 
