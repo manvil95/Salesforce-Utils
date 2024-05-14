@@ -258,10 +258,11 @@ WHERE Id NOT IN
 | Custom Label              | **LAB**_LabelName            |
 | Custom Setting            | **CS**_LabelName             |
 | Event                     | **LEV**_EventName            |
-| External Credentials      | **EC**_ExtCredentialsName    |
+| External Credential       | **EC**_ExtCredentialName     |
 | Flow                      | **FLW**_FlowName             |
 | Lightning Page            | **LP**_PageName              |
 | List View                 | **LV**_ListViewName          |
+| Named Credential          | **NC**_NamedCredentialName   |
 | Path                      | **PTH**_PathName             |
 | Tab                       | **TAB**_TabName              |
 | Validation Rule           | **VR**_PathName              |
