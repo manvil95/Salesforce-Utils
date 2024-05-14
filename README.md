@@ -165,11 +165,11 @@ IF(
 
 ### Reach query limits
 
-Si se va a alcanzar el límite de queries por DML en bucle:
+If you are going to reach the limit of queries per DML in loop:
 
-  1. Poner método -> último en el Trigger Handler
-  2. Controlar con siguiente if y romper proceso.
-  3. Invocar framework de control de errores si lo hay
+  1. Set method -> last in the Trigger Handler.
+  2. Control with next if and break process.
+  3. Invoke error control framework if there is one.
 
 ```java
 
