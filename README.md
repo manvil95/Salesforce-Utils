@@ -295,7 +295,7 @@ WHERE Id NOT IN
 | **Metadata Type**         | **API Name**                 |
 |---------------------------|------------------------------|
 | Custom Label              | **LAB**_LabelName            |
-| Custom Setting            | **CS**_LabelName             |
+| Custom Setting            | **CS**_CustomSettingName     |
 | Event                     | **LEV**_EventName            |
 | External Credential       | **EC**_ExtCredentialName     |
 | Flow                      | **FLW**_FlowName             |
