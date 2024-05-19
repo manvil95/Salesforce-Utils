@@ -431,7 +431,7 @@ A `.xml` file to retrieve all metadata's type from Salesforce.
 > "salesforcedx-vscode-core.detectConflictsAtSync": true,
 > ```
 
-### UNABLE TO GET ISSUER CERT LOCALLY
+### Unable to get issuer cert locally
 
 > [!CAUTION]
 > Al hacer `sfdx force:org:list` aparece ese error.
