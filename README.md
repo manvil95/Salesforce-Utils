@@ -33,7 +33,7 @@
 - [**VS Code Tricks**](#vs-code)
   - [Package.xml](#packagexml)
   - [Tricks](#tricks)
-  - [UNABLE TO GET ISSUER CERT LOCALLY](#unable-to-get-issuer-cert-locally)
+  - [Unable to get issuer cert locally](#unable-to-get-issuer-cert-locally)
   - [My settings.json](#my-settingsjson)
 - [References](#references)
     </td>
