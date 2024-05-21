@@ -28,6 +28,7 @@
 - 📚 [**SOQL**](#soql)
   - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
   - [Subquery examples](#subquery-examples)
+  - [Search by KeyPrefix](#search-by-keyprefix)
 - [**Naming Convention**](#naming-convention)
   - [List of common API suffixes in Salesforce](#list-of-common-API-suffixes-in-salesforce)   
 - [**VS Code Tricks**](#vs-code)
@@ -264,6 +265,14 @@ WHERE Id NOT IN
     FROM Opportunity 
     WHERE IsClosed = true
   )
+```
+
+### Search by KeyPrefix
+
+```sql
+SELECT Id, DeveloperName
+FROM EntityDefinition
+WHERE KeyPrefix = 'XXX'
 ```
 
 ## Naming convention
