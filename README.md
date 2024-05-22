@@ -19,7 +19,8 @@
     - [Execute Test in Package on deploy](#execute-test-in-package-on-deploy)
 - [**Organization - Production - Sandbox**](#organization---production---sandbox)
   - [Standard - Custom Objects](#standard---custom-objects)
-    - [Formula Fields](#formula-fields)   
+    - [Formula Fields](#formula-fields)
+  - [ORG Doctor](#org-doctor)   
 - [**Apex**](#apex)
   - [Code review checklist](#code-review-checklist)
   - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
@@ -193,6 +194,9 @@ IF(
     Text(RelatedObject__r.PicklistField__c)
 )
 ```
+
+### ORG Doctor
+To check org's status: [ORG Doctor](https://orgdoctor.herokuapp.com/)
 
 ## Apex
 
