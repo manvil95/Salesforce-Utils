@@ -331,6 +331,7 @@ WHERE KeyPrefix = 'XXX'
 | Scheduler                 | **SCH**_ClassName            |
 | Interface                 | **INT**_InterfaceName        |
 | Test                      | ClassAPIName_**Test**        |
+| Test Suite                | TestSuiteName_**TestSuite**  |
 
 ### _Visualforce_
 
@@ -348,27 +349,27 @@ WHERE KeyPrefix = 'XXX'
 | **__r**                  | Relationship                                        |      
 | **__e**                  | Events                                              |  
 | **__b**                  | Big Objects                                         |      
-| **__mdt**	               | Custom Metadata Type                                |              
-| **__x**	                 | External Object                                     |          
-| **__share**	             | Sharing Object                                      |          
-| **__Tag**	               | Salesforce Tags                                     |          
-| **__voteStat**	         | Rating for an article                               |              
-| **__viewStat**	         | Number of view per article                          |                      
-| **__kav**	               | Knowledge Article Objects                           |                  
+| **__mdt**	           | Custom Metadata Type                                |              
+| **__x**	           | External Object                                     |          
+| **__share**	           | Sharing Object                                      |          
+| **__Tag**	           | Salesforce Tags                                     |          
+| **__voteStat**	   | Rating for an article                               |              
+| **__viewStat**	   | Number of view per article                          |                      
+| **__kav**	           | Knowledge Article Objects                           |                  
 | **__history**	           | Field History Tracking                              |                  
-| **__xo**	               | Salesforce-to-Salesforce (S2S) spoke                |                              
-| **__pc**	               | Custom Persona Account Field                        |                      
-| **__ChangeEvent**	       | Change Data Capture                                 |              
-| **__StateCode__s**	     | Custom Address field                                |              
+| **__xo**	           | Salesforce-to-Salesforce (S2S) spoke                |                              
+| **__pc**	           | Custom Persona Account Field                        |                      
+| **__ChangeEvent**	   | Change Data Capture                                 |              
+| **__StateCode__s**	   | Custom Address field                                |              
 | **__CountryCode__s**	   | Custom Address field                                |              
-| **__Street__s**	         | Custom Address field                                |              
-| **__PostalCode__s**	     | Custom Address field                                |              
+| **__Street__s**	   | Custom Address field                                |              
+| **__PostalCode__s**	   | Custom Address field                                |              
 | **__City__s**	           | Custom Address field                                |              
 | **__GeocodeAccuracy__s** | Custom Address field                                |              
-| **__dlm**	               | (Data Model Object) for the Customer Data Platform. |                                              
-| **__chn**	               | Change Event channel                                |              
-| **__latitude__s**	       | Latitude Coordinate                                 |              
-| **__longitude__s**	     | Longitude Coordinate                                | 
+| **__dlm**	           | (Data Model Object) for the Customer Data Platform. |                                              
+| **__chn**	           | Change Event channel                                |              
+| **__latitude__s**	   | Latitude Coordinate                                 |              
+| **__longitude__s**	   | Longitude Coordinate                                | 
 
 
 ## VS Code
