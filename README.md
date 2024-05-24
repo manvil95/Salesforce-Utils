@@ -13,6 +13,7 @@
     - [Retrieve metadata](#retrieve-metadata)
     - [Save logs beyond debugs logs](#save-logs-beyond-debugs-logs)
     - [Listar ORG](#listar-org)
+    - [Create package in manifest folder](#create-package-in-manifest-folder)
     - [Mostrar alias y Value de las ORG](#mostrar-alias-y-value-de-las-org)
   - [No reconoce orgs](#no-reconoce-orgs)
   - [Scripts](#scripts)
@@ -109,6 +110,11 @@ sfdx force:org:display
 sfdx alias:unset YourAlias
 ```
 
+#### Create package in manifest folder
+
+```shell
+sfdx force source manifest create --source-dir force-app/main/default --output-dir manifest --name=package
+```
 
 #### Retrieve from package.xml
 
