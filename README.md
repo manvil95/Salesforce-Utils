@@ -289,25 +289,26 @@ WHERE KeyPrefix = 'XXX'
 
 ### _Object Fields_
 
-| **Field Type**            | **API Name**                 |
-|---------------------------|------------------------------|
-| Auto Number               | **AUT**_AutoNumberField__c   |
-| Boolean                   | **FLG**_BooleanField__c      |
-| Currency                  | **DIV**_CurrencyField__c     |
-| Date & DateTime           | **DAT**_DateTimeField__c     |
-| Email                     | **EMA**_EmailField__c        |
-| Formula                   | **FOR**_FormulaField__c      |
-| Geolocation               | **GEO**_GeolocationField__c  |
-| Lookup                    | **LKP**_LookUpField__c       |
-| Multi-Select Picklist     | **MSE**_MultiSelectField__c  |
-| Number                    | **NUM**_NumberField__c       |
-| Percent                   | **PER**_PercentField__c      |
-| Phone                     | **TEL**_PhoneField__c        |
-| Picklist                  | **SEL**_PicklistField__c     |
-| Roll-Up Summary           | **RUS**_RollUpSummaryField__c|
-| Text                      | **TXT**_TextField__c         |
-| Time                      | **HOR**_TimeField__c         |
-| URL                       | **URL**_URLField__c          |
+| **Field Type**             | **API Name**                 |
+|----------------------------|------------------------------|
+| Auto Number                | **AUT**_AutoNumberField__c   |
+| Boolean                    | **FLG**_BooleanField__c      |
+| Currency                   | **DIV**_CurrencyField__c     |
+| Date & DateTime            | **DAT**_DateTimeField__c     |
+| Email                      | **EMA**_EmailField__c        |
+| Formula                    | **FOR**_FormulaField__c      |
+| Geolocation                | **GEO**_GeolocationField__c  |
+| Lookup                     | **LKP**_LookUpField__c       |
+| Master-Detail Relationship | **MDR**_MasterDetailField__c |
+| Multi-Select Picklist      | **MSE**_MultiSelectField__c  |
+| Number                     | **NUM**_NumberField__c       |
+| Percent                    | **PER**_PercentField__c      |
+| Phone                      | **TEL**_PhoneField__c        |
+| Picklist                   | **SEL**_PicklistField__c     |
+| Roll-Up Summary            | **RUS**_RollUpSummaryField__c|
+| Text                       | **TXT**_TextField__c         |
+| Time                       | **HOR**_TimeField__c         |
+| URL                        | **URL**_URLField__c          |
 
 ### _Metadata_
 
