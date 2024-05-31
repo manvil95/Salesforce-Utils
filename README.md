@@ -8,6 +8,7 @@
 ## _Table of content_
 
 - ⚙ [**LWC**](#lwc)
+  - [LWC Debug](#lwc-debug)
 - 💻 [**Command Issues**](#command-issues)
   - [Useful commands](#useful-commands)
     - [Retrieve metadata](#retrieve-metadata)
@@ -51,6 +52,13 @@
 
 > [!TIP]
 > Evita Visualforce Page. 😊
+
+### LWC Debug
+
+Pasos DEBUG LWC
+1. Debug mode -> Seleccionar usuario y habilitar (Permite ver el JS direcamente en la consola del navegador, pudiendo podificar, debugear, etc)
+2. Session settings -> Caching | Enable Secure persistent browser caching to improve performance:False (Permite que puedas refrescar sin que se te mantenga la Cache)
+3. Session Settings -> Lightning Web Security | Use Lightning Web Security for Lightning web components and Aura components:False
 
 ## Command Issues
 
