@@ -22,7 +22,8 @@
 - [**Organization - Production - Sandbox**](#organization---production---sandbox)
   - [Standard - Custom Objects](#standard---custom-objects)
     - [Formula Fields](#formula-fields)
-  - [ORG Doctor](#org-doctor)   
+  - [ORG Doctor](#org-doctor)
+  - [Grant Salesforce Support login access to your organization](#grant-salesforce-support-login-access-to-your-organization)
 - [**Apex**](#apex)
   - [Code review checklist](#code-review-checklist)
   - [Postman](#postman)
@@ -192,6 +193,7 @@ sfdx force:source:deploy -x ${FILE_PACKAGE} -l RunSpecifiedTests -r ${APESXTEST_
 ### Standard - Custom Objects
 
 #### Formula Fields
+
 Cuando se desee mostrar correctamente el label en vez de el APIName de una picklist, utilizar funcionalidades de las fórmulas. Ej.: Tengo una picklist que muestra los valores como: A-Suceso, B-EspacioBlanco-B12. Si se desea poner espacios entre los guiones, la fórmula debería ser así:
 
 ```soql
@@ -211,7 +213,17 @@ IF(
 ```
 
 ### ORG Doctor
+
 To check org's status: [ORG Doctor](https://orgdoctor.herokuapp.com/)
+
+### Grant Salesforce Support login access to your organization
+
+1. In the upper right, click your image (avatar) and then click `Settings`.
+2. In `Quick Find` search field, enter "Grant" and click `Grant Account Login Access`.
+3. Set the `Access Duration` option to Salesforce.com Support. Note: It is recommended to set the `Access Duration` to one month for technical escalations. It can be extended later if needed. 
+4. Click Save.
+
+[Salesforce Help](https://help.salesforce.com/s/articleView?id=000384334&type=1)
 
 ## Apex
 
