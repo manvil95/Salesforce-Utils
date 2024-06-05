@@ -34,6 +34,7 @@
   - [Chain LIKE and NOT LIKE](#chain-like-and-not-like)
   - [Subquery examples](#subquery-examples)
   - [Search by KeyPrefix](#search-by-keyprefix)
+  - [Search Entities and Fields](#search-entities-and-fields)
 - [**Naming Convention**](#naming-convention)
   - [List of common API suffixes in Salesforce](#list-of-common-API-suffixes-in-salesforce)   
 - [**VS Code Tricks**](#vs-code)
@@ -309,6 +310,15 @@ WHERE Id NOT IN
 SELECT Id, DeveloperName
 FROM EntityDefinition
 WHERE KeyPrefix = 'XXX'
+```
+
+### Search Entities and Fields
+
+To search all fields in all objects, even deleted ones.
+
+```sql
+SELECT Id, DeveloperName, EntityDefinition.DeveloperName
+FROM CustomField
 ```
 
 ## Naming convention
