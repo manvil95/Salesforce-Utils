@@ -351,6 +351,7 @@ FROM CustomField
 | **Metadata Type**         | **API Name**                 |
 |---------------------------|------------------------------|
 | Custom Label              | **LAB**_LabelName            |
+| Custom Metadata           | **CMT**_CustomMetadataName   |
 | Custom Setting            | **CS**_CustomSettingName     |
 | Event                     | **LEV**_EventName            |
 | External Credential       | **EC**_ExtCredentialName     |
