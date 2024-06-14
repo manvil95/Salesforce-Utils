@@ -90,6 +90,7 @@ sfdx alias:unset XXXX
 #### Execute Test in Package on deploy
 
 ```sh
+#!/bin/bash
 # ------------------- Variable para especificar el nombre de la org según VS Code
 DESTINATION="<nameORG>";
 
