@@ -28,6 +28,107 @@
 
 ## Commands and Scripts for Salesforce
 
+<!--<table>
+  <tr>
+    <th>Título y Descripción</th>
+    <th>Comandos</th>
+  </tr>
+  <tr>
+    <td><b>Retrieve metadata</b></td>
+    <td>
+      <pre><code>
+sfdx force:source:retrieve -m CustomObject:CustomObject__c
+sfdx force:source:retrieve -m ApexClass:MyApexClass
+sfdx force:source:retrieve -m Profile:Admin
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Save logs beyond debugs logs</b><br>Enter this command in the VS Code terminal.<br>Leave it running while performing the desired actions.<br>Save file in root folder and put in the <code>log.txt</code> file all the logs that are produced.<br>Also, you can retrieve apex log in VS Code: <code>Ctrl + Shif + P</code> Log: Retrieve Apex Log And Show Analysis.</td>
+    <td>
+      <code>sfdx force:apex:log:tail --color &gt; log.txt</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>List ORGs</b></td>
+    <td>
+      <code>sfdx force:org:list</code>
+	      <code>sf org list</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Show ORG alias and value</b></td>
+    <td>
+      <pre><code>
+sfdx alias:list
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Delete an org</b></td>
+    <td>
+      <pre><code>
+sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Show ORG Description</b></td>
+    <td>
+      <pre><code>
+sfdx force:org:display
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Unset Alias ORG</b></td>
+    <td>
+      <pre><code>
+sfdx alias:unset YourAlias
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Create package in manifest folder</b></td>
+    <td>
+      <pre><code>
+sfdx force source manifest create --source-dir force-app/main/default 
+	      --output-dir manifest 
+	      --name=package
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Retrieve from package.xml</b></td>
+    <td>
+      <pre><code>
+sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>SalesforceTreeAPI</b></td>
+    <td>
+      <pre><code>
+sfdx force:data:tree:import
+      </code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td><b>No reconoce ORGs</b><br>Si no reconoce el valor de la ORG<br># Logout all orgs<br># Volver a conectar</td>
+    <td>
+      <pre><code>
+sfdx force:org:list
+sfdx alias:list
+sfdx alias:unset XXXX
+      </code></pre>
+    </td>
+  </tr>
+</table>
+-->
+
+
+
 #### Retrieve metadata
 
 ```shell
