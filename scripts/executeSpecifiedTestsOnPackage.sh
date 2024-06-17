@@ -1,3 +1,4 @@
+#!/bin/bash
 # ------------------- Variable para especificar el nombre de la org según VS Code
 DESTINATION="<nameORG>";
 
@@ -24,7 +25,7 @@ while read line;
 APEXTEST_LIST=${APEXTEST_LIST%,};
 
 # ------------------- Imprimimos el comando lanzado en la terminal
-echo "sfdx force:source:deploy -x "${FILE_PACKAGE}" -l RunSpecifiedTests -r "${APESXTEST_LIST}" -c -u "${DESTINATION}" --verbose";
+echo "sfdx force:source:deploy -x "${FILE_PACKAGE}" -l RunSpecifiedTests -r "${APEXTEST_LIST}" -c -u "${DESTINATION}" --verbose";
 
 # ------------------- Comando sfdx para validar clases Apex ejecutando Test Especificos
-sfdx force:source:deploy -x ${FILE_PACKAGE} -l RunSpecifiedTests -r ${APESXTEST_LIST} -c -u ${DESTINATION} --verbose;
+sfdx force:source:deploy -x ${FILE_PACKAGE} -l RunSpecifiedTests -r ${APEXTEST_LIST} -c -u ${DESTINATION} --verbose;
