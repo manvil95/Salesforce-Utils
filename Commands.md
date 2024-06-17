@@ -31,7 +31,9 @@
     </td>
   </tr>
   <tr>
-    <td><b>Save logs beyond debugs logs</b><br>Enter this command in the VS Code terminal.<br>Leave it running while performing the desired actions.<br>Save file in root folder and put in the <code>log.txt</code> file all the logs that are produced.<br>Also, you can retrieve apex log in VS Code: <code>Ctrl + Shif + P</code> Log: Retrieve Apex Log And Show Analysis.</td>
+    <td><b>Save logs beyond debugs logs</b><br>Enter this command in the VS Code terminal.<br>
+	    Leave it running while performing the desired actions.<br>Save file in root folder and put in the <code>log.txt</code> file all the logs that are produced.<br>
+	    Also, you can retrieve apex log in VS Code: <code>Ctrl + Shif + P</code> Log: Retrieve Apex Log And Show Analysis.</td>
     <td>
       <code>sfdx force:apex:log:tail --color &gt; log.txt</code>
     </td>
@@ -52,7 +54,7 @@
   <tr>
     <td><b>Delete an org</b></td>
     <td>
-      <code>sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'</code>
+      <code>sfdx force:org:delete -p -u 'orgName'</code>
     </td>
   </tr>
   <tr>
@@ -70,13 +72,13 @@
   <tr>
     <td><b>Create package in manifest folder</b></td>
     <td>
-      <code>sfdx force source manifest create --source-dir force-app/main/default --output-dir manifest --name=package</code>
+      <code>sfdx force source manifest create --source-dir force-app/main/default --output-dir manifest --name=packageName</code>
     </td>
   </tr>
   <tr>
     <td><b>Retrieve from package.xml</b></td>
     <td>
-      <code>sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml</code>
+      <code>sfdx project retrieve start -o OrgName -x .\Package.xml</code>
     </td>
   </tr>
   <tr>
