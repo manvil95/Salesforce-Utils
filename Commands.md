@@ -2,11 +2,24 @@
   <tr>
     <td width="40%" align=center><img src="./img/Salesforce-Logo.png" width="200"/><br><br></b><h2>Commands and Scripts for Salesforce</h2><br><br><p><b>Repository with tools, tricks, commands and resources for Salesforce development and administration.</p></td>
     <td>
-
-## _Table of content_
-
-- ⚙ [**Commands and Scripts for Salesforce**](#commands-and-scripts-for-salesforce)
-  - Still in progress...
+<br>
+	    
+* ⚙ [**Commands and Scripts for Salesforce**](#commands-and-scripts-for-salesforce)
+  * [Retrieve metadata](#retrieve-metadata)
+  * [Save logs beyond debugs logs](#save-logs-beyond-debugs-logs)
+  * [List ORGs](#list-orgs)
+  * [Show ORG alias and value](#show-org-alias-and-value)
+  * [Delete an org](#delete-an-org)
+  * [Show ORG Description](#show-org-description)
+  * [Unset Alias ORG](#unset-alias-org)
+  * [Create package in manifest folder](#create-package-in-manifest-folder)
+  * [Retrieve from package.xml](#retrieve-from-packagexml)
+  * [SalesforceTreeAPI](#salesforcetreeapi)
+  * [No reconoce ORGs](#no-reconoce-orgs)
+* ⌨ [**Scripts**](#scripts)
+  * [Execute Test in Package on deploy](#execute-test-in-package-on-deploy)
+ 
+  <br>
     </td>
   </tr>
 
@@ -87,7 +100,7 @@ sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml
 sfdx force:data:tree:import
 ```
 
-### No reconoce ORGs
+#### No reconoce ORGs
 
 ```shell
 # Si no reconoce el valor de la ORG
