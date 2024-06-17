@@ -4,18 +4,7 @@
     <td>
 <br>
 	    
-* ⚙ [**Commands and Scripts for Salesforce**](#commands-and-scripts-for-salesforce)
-  * [Retrieve metadata](#retrieve-metadata)
-  * [Save logs beyond debugs logs](#save-logs-beyond-debugs-logs)
-  * [List ORGs](#list-orgs)
-  * [Show ORG alias and value](#show-org-alias-and-value)
-  * [Delete an org](#delete-an-org)
-  * [Show ORG Description](#show-org-description)
-  * [Unset Alias ORG](#unset-alias-org)
-  * [Create package in manifest folder](#create-package-in-manifest-folder)
-  * [Retrieve from package.xml](#retrieve-from-packagexml)
-  * [SalesforceTreeAPI](#salesforcetreeapi)
-  * [No reconoce ORGs](#no-reconoce-orgs)
+* ⚙ [**Commands**](#commands)
 * ⌨ [**Scripts**](#scripts)
   * [Execute Test in Package on deploy](#execute-test-in-package-on-deploy)
  
@@ -26,9 +15,9 @@
 </table>
 
 
-## Commands and Scripts for Salesforce
+# Commands
 
-<!--<table>
+<table>
   <tr>
     <th>Título y Descripción</th>
     <th>Comandos</th>
@@ -36,11 +25,9 @@
   <tr>
     <td><b>Retrieve metadata</b></td>
     <td>
-      <pre><code>
-sfdx force:source:retrieve -m CustomObject:CustomObject__c
-sfdx force:source:retrieve -m ApexClass:MyApexClass
-sfdx force:source:retrieve -m Profile:Admin
-      </code></pre>
+      <code>sfdx force:source:retrieve -m CustomObject:CustomObject__c</code><br>
+      <code>sfdx force:source:retrieve -m ApexClass:MyApexClass</code><br>
+      <code>sfdx force:source:retrieve -m Profile:Admin</code>
     </td>
   </tr>
   <tr>
@@ -52,171 +39,65 @@ sfdx force:source:retrieve -m Profile:Admin
   <tr>
     <td><b>List ORGs</b></td>
     <td>
-      <code>sfdx force:org:list</code>
-	      <code>sf org list</code>
+      <code>sfdx force:org:list</code><br>
+      <code>sf org list</code>
     </td>
   </tr>
   <tr>
     <td><b>Show ORG alias and value</b></td>
     <td>
-      <pre><code>
-sfdx alias:list
-      </code></pre>
+      <code>sfdx alias:list</code>
     </td>
   </tr>
   <tr>
     <td><b>Delete an org</b></td>
     <td>
-      <pre><code>
-sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'
-      </code></pre>
+      <code>sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'</code>
     </td>
   </tr>
   <tr>
     <td><b>Show ORG Description</b></td>
     <td>
-      <pre><code>
-sfdx force:org:display
-      </code></pre>
+      <code>sfdx force:org:display</code>
     </td>
   </tr>
   <tr>
     <td><b>Unset Alias ORG</b></td>
     <td>
-      <pre><code>
-sfdx alias:unset YourAlias
-      </code></pre>
+      <code>sfdx alias:unset YourAlias</code>
     </td>
   </tr>
   <tr>
     <td><b>Create package in manifest folder</b></td>
     <td>
-      <pre><code>
-sfdx force source manifest create --source-dir force-app/main/default 
-	      --output-dir manifest 
-	      --name=package
-      </code></pre>
+      <code>sfdx force source manifest create --source-dir force-app/main/default --output-dir manifest --name=package</code>
     </td>
   </tr>
   <tr>
     <td><b>Retrieve from package.xml</b></td>
     <td>
-      <pre><code>
-sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml
-      </code></pre>
+      <code>sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml</code>
     </td>
   </tr>
   <tr>
     <td><b>SalesforceTreeAPI</b></td>
     <td>
-      <pre><code>
-sfdx force:data:tree:import
-      </code></pre>
+      <code>sfdx force:data:tree:import</code>
     </td>
   </tr>
   <tr>
-    <td><b>No reconoce ORGs</b><br>Si no reconoce el valor de la ORG<br># Logout all orgs<br># Volver a conectar</td>
+    <td><b>No reconoce ORGs</b><br>Si no reconoce el valor de la ORG<br>Logout all orgs<br>Volver a conectar</td>
     <td>
-      <pre><code>
-sfdx force:org:list
-sfdx alias:list
-sfdx alias:unset XXXX
-      </code></pre>
+      <code>sfdx force:org:list</code><br>
+      <code>sfdx alias:list</code><br>
+      <code>sfdx alias:unset XXXX</code>
     </td>
   </tr>
 </table>
--->
 
+# Scripts
 
-
-#### Retrieve metadata
-
-```shell
-sfdx force:source:retrieve -m CustomObject:CustomObject__c
-sfdx force:source:retrieve -m ApexClass:MyApexClass
-sfdx force:source:retrieve -m Profile:Admin
-```
-
-#### Save logs beyond debugs logs
-
-Enter this command in the VS Code terminal.
-
-Leave it running while performing the desired actions.
-
-Save file in root folder and put in the `log.txt` file all the logs that are produced.
-
-```shell
-sfdx force:apex:log:tail --color > log.txt
-```
-
-Also, you can retrieve apex log in VS Code: `Ctrl + Shif + P` Log: Retrieve Apex Log And Show Analysis.
-
-
-#### List ORGs
-
-```shell
-sfdx force:org:list
-sf org list
-```
-
-#### Show ORG alias and value
-
-```shell
-sfdx alias:list
-```
-
-#### Delete an org
-
-```shell
-sfdx force:org:delete -p -u 'YOUR_ORG_ALIAS_NAME'
-```
-
-#### Show ORG Description
-
-```shell
-sfdx force:org:display 
-```
-
-#### Unset Alias ORG
-
-```shell
-sfdx alias:unset YourAlias
-```
-
-#### Create package in manifest folder
-
-```shell
-sfdx force source manifest create --source-dir force-app/main/default --output-dir manifest --name=package
-```
-
-#### Retrieve from package.xml
-
-```shell
-sfdx project retrieve start -o <Nombre-Org> -x .\Package.xml
-```
-
-#### SalesforceTreeAPI
-
-```shell
-sfdx force:data:tree:import
-```
-
-#### No reconoce ORGs
-
-```shell
-# Si no reconoce el valor de la ORG
-sfdx force:org:list
-sfdx alias:list
-
-# Logout all orgs
-sfdx alias:unset XXXX
-
-# Volver a conectar
-```
-
-### Scripts
-
-#### Execute Test in Package on deploy
+## Execute Test in Package on deploy
 
 ```sh
 #!/bin/bash
