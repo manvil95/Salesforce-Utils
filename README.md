@@ -282,68 +282,6 @@ FROM CustomField
 
 ## VS Code
 
-### Package.xml
-
-A basic `.xml` file to retrieve metadata's type from Salesforce.
-
-```xml
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
-  <types>
-    <members>*</members>
-    <name>ApexPage</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>ApexClass</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>Flow</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>CustomApplication</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>CustomMetadata</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>CustomObject</name>
-  </types>
-  <types>
-    <members>*</members> //Asset.Status -> AssetStatus
-    <name>StandardValueSet</name>
-  </types> 
-  <types>
-    <members>*</members>
-    <name>GlobalValueSet</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>CustomTab</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>FlexiPage</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>Layout</name>
-  </types>
-  <types>
-    <members>*</members>
-    <name>RecordType</name>
-  </types>
-  <types>
-    <members>Admin</members>
-    <name>Profile</name>
-  </types>
-  <version>60.0</version>
-</Package>
-```
-
 ### Tricks
 
 > [!TIP]
