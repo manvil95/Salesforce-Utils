@@ -28,7 +28,6 @@
 - [**Naming Convention**](#naming-convention)
   - [List of common API suffixes in Salesforce](#list-of-common-API-suffixes-in-salesforce)   
 - [**VS Code Tricks**](#vs-code)
-  - [Package.xml](#packagexml)
   - [Tricks](#tricks)
   - [Unable to get issuer cert locally](#unable-to-get-issuer-cert-locally)
   - [My settings.json](#my-settingsjson)
