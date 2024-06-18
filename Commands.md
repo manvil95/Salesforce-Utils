@@ -31,9 +31,9 @@
     </td>
   </tr>
   <tr>
-    <td><b>Save logs beyond debugs logs</b><br>Enter this command in the VS Code terminal.<br>
-	    Leave it running while performing the desired actions.<br>Save file in root folder and put in the <code>log.txt</code> file all the logs that are produced.<br>
-	    Also, you can retrieve apex log in VS Code: <code>Ctrl + Shif + P</code> Log: Retrieve Apex Log And Show Analysis.</td>
+    <td><b>Save logs beyond debugs logs</b><br>- Enter this command in the VS Code terminal.<br>
+	    - Leave it running while performing the desired actions.<br>- Save file in root folder and put in the <code>log.txt</code> file all the logs that are produced.<br>
+	    - Also, you can retrieve apex log in VS Code: <code>Ctrl + Shif + P</code> Log: Retrieve Apex Log And Show Analysis.</td>
     <td>
       <code>sfdx force:apex:log:tail --color &gt; log.txt</code>
     </td>
