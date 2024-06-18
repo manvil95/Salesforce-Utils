@@ -284,7 +284,7 @@ FROM CustomField
 
 ### Package.xml
 
-A `.xml` file to retrieve all metadata's type from Salesforce.
+A basic `.xml` file to retrieve metadata's type from Salesforce.
 
 ```xml
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
