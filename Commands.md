@@ -94,6 +94,12 @@
     </td>
   </tr>
   <tr>
+    <td><b>Validate pre-deployment</b></td>
+    <td>
+      <code>sf project deploy validate --source-dir force-app --test-level RunLocalTests --target-org <NombreOrgIntegracion> --verbose | Out-File -FilePath validation.txt</code>
+    </td>
+  </tr>
+  <tr>
     <td><b>No reconoce ORGs</b><br>Si no reconoce el valor de la ORG<br>Logout all orgs<br>Volver a conectar</td>
     <td>
       <code>sfdx force:org:list</code><br>
