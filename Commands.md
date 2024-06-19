@@ -70,9 +70,15 @@
     </td>
   </tr>
   <tr>
-    <td><b>Create package in manifest folder</b></td>
+    <td><b>Create package from source in manifest folder</b></td>
     <td>
-      <code>sfdx force source manifest create --source-dir force-app/main/default --output-dir manifest --name=packageName</code>
+      <code>sfdx force source manifest create --source-dir force-app/main/default --output-dir manifest --name=package_source</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Create package from org in manifest folder</b></td>
+    <td>
+      <code>sf project generate manifest --from-org OrgName --output-dir manifest --name=package_org</code>
     </td>
   </tr>
   <tr>
