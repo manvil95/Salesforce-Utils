@@ -88,6 +88,12 @@
     </td>
   </tr>
   <tr>
+    <td><b>Create scratch-org</b></td>
+    <td>
+      <code>sf org create scratch --target-dev-hub DevHubAlias --definition-file config/project-scratch-def.json --set-default --duration-days 30 --no-namespace --alias ScratchOrgAlias</code>
+    </td>
+  </tr>
+  <tr>
     <td><b>SalesforceTreeAPI</b></td>
     <td>
       <code>sfdx force:data:tree:import</code>
@@ -97,6 +103,18 @@
     <td><b>Validate pre-deployment</b></td>
     <td>
       <code>sf project deploy validate --source-dir force-app --test-level RunLocalTests --target-org <NombreOrgIntegracion> --verbose | Out-File -FilePath validation.txt</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Generate password for scratch-org user</b></td>
+    <td>
+      <code>sf org generate password --target-org OrgName</code>
+    </td>
+  </tr>
+  <tr>
+    <td><b>See password and user info</b></td>
+    <td>
+      <code>sf org display user -o userName</code>
     </td>
   </tr>
   <tr>
