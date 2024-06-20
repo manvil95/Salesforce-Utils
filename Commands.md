@@ -88,6 +88,12 @@
     </td>
   </tr>
   <tr>
+    <td><b>Assign Permission Set to user</b></td>
+    <td>
+      <code>sf org assign permset --perm-set-name PermissionSetName -u OrgName</code>
+    </td>
+  </tr>
+  <tr>
     <td><b>Create scratch-org</b></td>
     <td>
       <code>sf org create scratch --target-dev-hub DevHubAlias --definition-file config/project-scratch-def.json --set-default --duration-days 30 --no-namespace --alias ScratchOrgAlias</code>
