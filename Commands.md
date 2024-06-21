@@ -5,6 +5,7 @@
 <br>
 	    
 * ⚙ [**Commands**](#commands)
+  * [Salesforce CLI](#salesforce-cli) 
 * ⌨ [**Scripts**](#scripts)
   * [Execute Test in Package on deploy](#execute-test-in-package-on-deploy)
  
@@ -16,6 +17,8 @@
 
 
 # Commands
+
+## Salesforce CLI
 
 <table>
   <tr>
