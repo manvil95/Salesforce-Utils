@@ -136,6 +136,21 @@
   </tr>
 </table>
 
+## Git
+
+<table>
+  <tr>
+    <th>Title & description</th>
+    <th>Commands</th>
+  </tr>
+  <tr>
+    <td><b>Diff branches/commits</b></td>
+    <td>
+      <code>git --no-pager diff --stat branch1..branch2</code>
+    </td>
+  </tr>
+</table>
+
 # Scripts
 
 ## Execute Test in Package on deploy
