@@ -8,6 +8,7 @@
   * [Salesforce CLI](#salesforce-cli) 
   * [Git](#git)
     * [SFDX-Git-Delta](#sfdx-git-delta) 
+    * [sfdx-plugin-source-read](#sfdx-plugin-source-read) 
 * ⌨ [**Scripts**](#scripts)
   * [Execute Test in Package on deploy](#execute-test-in-package-on-deploy)
  
@@ -138,7 +139,7 @@
   </tr>
 </table>
 
-## Git
+## GIT
 
 <table>
   <tr>
@@ -160,6 +161,12 @@
 >
 > [Repository](https://github.com/scolladon/sfdx-git-delta)
 
+### sfdx-plugin-source-read
+
+> [!NOTE]
+> sfdx/sf plugin to read Metadata via CRUD Metadata API
+>
+> [Repo](https://github.com/amtrack/sfdx-plugin-source-read/)
 
 # Scripts
 
