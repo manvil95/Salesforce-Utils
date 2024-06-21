@@ -152,6 +152,12 @@
       <code>git --no-pager diff --stat branch1..branch2</code>
     </td>
   </tr>
+  <tr>
+    <td><b>See log history</b></td>
+    <td>
+      <code>git log --graph --oneline --all --decorate</code>
+    </td>
+  </tr>
 </table>
 
 ### SFDX-Git-Delta
