@@ -6,6 +6,8 @@
 	    
 * ⚙ [**Commands**](#commands)
   * [Salesforce CLI](#salesforce-cli) 
+  * [Git](#git)
+    * [SFDX-Git-Delta](#sfdx-git-delta) 
 * ⌨ [**Scripts**](#scripts)
   * [Execute Test in Package on deploy](#execute-test-in-package-on-deploy)
  
@@ -150,6 +152,14 @@
     </td>
   </tr>
 </table>
+
+### SFDX-Git-Delta
+
+> [!NOTE]
+> SFDX plugin to generate Incremental Salesforce deployments manifests and artifacts
+>
+> [Repository](https://github.com/scolladon/sfdx-git-delta)
+
 
 # Scripts
 
