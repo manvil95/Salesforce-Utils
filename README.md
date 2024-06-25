@@ -25,6 +25,7 @@
   - [Subquery examples](#subquery-examples)
   - [Search by KeyPrefix](#search-by-keyprefix)
   - [Search Entities and Fields](#search-entities-and-fields)
+  - [See scratch-org expiration](#see-scratch-org-expiration)
 - [**Naming Convention**](#naming-convention)
   - [List of common API suffixes in Salesforce](#list-of-common-API-suffixes-in-salesforce)   
 - [**VS Code Tricks**](#vs-code)
@@ -182,6 +183,13 @@ To search all fields in all objects, even deleted ones.
 ```sql
 SELECT Id, DeveloperName, EntityDefinition.DeveloperName
 FROM CustomField
+```
+
+### See scratch-org expiration
+
+```sql
+SELECT Id, TrialExpirationDate
+FROM Organization
 ```
 
 ## Naming convention
