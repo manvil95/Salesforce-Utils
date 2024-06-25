@@ -90,7 +90,7 @@
   <tr>
     <td><b>Retrieve from package.xml</b></td>
     <td>
-      <code>sfdx project retrieve start -o OrgName -x .\Package.xml</code>
+      <code>sf project retrieve start -o OrgName -x .\Package.xml</code>
     </td>
   </tr>
   <tr>
