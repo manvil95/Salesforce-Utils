@@ -15,6 +15,7 @@
   - [ORG Doctor](#org-doctor)
   - [Grant Salesforce Support login access to your organization](#grant-salesforce-support-login-access-to-your-organization)
 - [**Apex**](#apex)
+  - [Search all lookups in other objects](#search-all-lookups-in-other-objects)
   - [Code review checklist](#code-review-checklist)
   - [Postman](#postman)
   - [Alcanzar límite de queries](#alcanzar-límite-de-queries)
@@ -91,6 +92,35 @@ To check org's status: [ORG Doctor](https://orgdoctor.herokuapp.com/)
 [Salesforce Help](https://help.salesforce.com/s/articleView?id=000384334&type=1)
 
 ## Apex
+
+### Search all lookups in other objects
+
+```java
+List<String> referencedFields = new List<String>();
+Map<String, Schema.SObjectType> gd = Schema.getGlobalDescribe();
+
+for (Schema.SObjectType sot : gd.values()) {
+  Schema.DescribeSObjectResult objResult = sot.getDescribe();
+  Map<String, Schema.SObjectField> fields = objResult.fields.getMap();
+  
+  for (String fieldName : fields.keySet()) {
+    Schema.DescribeFieldResult fieldResult = fields.get(fieldName).getDescribe();
+    Schema.DisplayType fieldType = fieldResult.getType();
+    
+    if (fieldType == Schema.DisplayType.Reference) {
+      List<Schema.SObjectType> referenceTo = fieldResult.getReferenceTo();
+      for (Schema.SObjectType ref : referenceTo) {
+        if (ref.getDescribe().getName().equals('NombreDelObjeto')) {
+          referencedFields.add(objResult.getName() + '.' + fieldName);
+          System.debug('FIELD: ' + objResult.getName() + '.' + fieldName);
+        }
+      }
+    }
+  }
+}
+
+System.debug('FIELDS: ' + referencedFields);
+```
 
 ### Code review checklist
 
