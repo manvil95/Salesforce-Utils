@@ -153,6 +153,19 @@ else {
 }
 ```
 
+### Test an .AddError()
+
+```java
+Test.startTest();
+try {
+  update workOrder;
+  Assert.fail('The update did not fail');
+} catch (DmlException e) {
+  Assert.isTrue(e.getMessage().contains(Label.FailLabel), 'The error is not the propper one');
+}
+Test.stopTest();
+```
+
 ### Developer console doesn't show logs
 
 When the 'Developer Console' does not show any log and freezes, this is what to do[^1]: if you have any Chromium based browser such as Chrome, edge, opera, etc. you have to open the dev tools from the console, open the network section and refresh and magically it is solved:
