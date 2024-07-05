@@ -114,7 +114,7 @@
   <tr>
     <td><b>Validate pre-deployment</b></td>
     <td>
-      <code>sf project deploy validate --source-dir force-app --test-level RunLocalTests --target-org <NombreOrgIntegracion> --verbose | Out-File -FilePath validation.txt</code>
+      <code>sf project deploy validate --source-dir force-app --test-level RunLocalTests --target-org NombreOrg --verbose | Out-File -FilePath validation.txt</code>
     </td>
   </tr>
   <tr>
